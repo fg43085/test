@@ -2,4 +2,32 @@
     background-color: red;
     text-align: center;
     color: yellow;
+    padding: 20px;
+    margin: 20px 1px;
+    border-radius: 50px;
+}
+
+.paragraphs{
+    color:blue;
+    text-align: center;
+}
+
+.button-refresh{
+    text-align: center;
+    color:  blue;
+    font-weight: bolder;
+    border-radius: 50px;
+    border-width: 5px;
+    border-color: green;
+    border-style:solid;
+    background-color: white;
+    
+}
+.button-refresh.hover{
+    background-color: red;
+    color: white;
+}
+
+.div{
+    text-align: center;
 }
