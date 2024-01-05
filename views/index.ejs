@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <title>Blog Website</title>
-        <link rel="stylesheet" href ="\style.css">  
+        <link rel="stylesheet" href ="/style.css">  
     </head>
     <body>
         <header>
@@ -42,7 +42,27 @@
                     </form>
                 </div>
             </div>
+
+            <div id="postDetailModal" class="modal"> 
+                <div class="modal-content"> 
+                    <span class="close" id="closeDetailModal"> 
+                          × 
+                      </span> 
+                    <h1 id="detailTitle"></h1> 
+                    <span id="detailDate"></span> 
+                    <p id="detailDescription"></p> 
+                </div> 
+            </div> 
+      
+            <div id="postCreatedMessage" class="post-message"> 
+                Post created successfully! 
+              </div> 
         </main>
 
+        <footer>
+            <p>2024 Frano</p>
+        </footer>
+
+        <script src="/index.js"></script>
     </body>
 </html>
