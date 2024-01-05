@@ -1,27 +1,41 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset = "UTF-8">
-    <title>This is title</title>
-    <link rel = "stylesheet" href ="\style.css">    
-</head>  
+<html lang ="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Blog Website</title>
+        <link rel="stylesheet" href ="\style.css">  
+    </head>
+    <body>
+        <header>
+            <h1 class ="logo">
+                <a href="#"> Blog Website </a>
+            </h1>
+            <nav>
+                <ul>
+                    <li class ="nav1"><a href ="/">Home</a></li>
+                    <li class ="nav1"><a href="/" id="createPostBtn">Create post</a></li>
+                    <li class ="nav1"><a href="/">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
 
-<body>
-    <div class="h2">
-        <h2>Currency Strength Meter</h1>
-    </div>
+        <main class="post-container">
+            <div id="createPostModal" class="modal">
+                <div class="modal-content">
+                    <span class="close" id="closeModal">x</span>
+                    <h2>Create a New Post</h2>
+                    <form id="postForm">
+                        <div class ="upper">
+                            <div class ="title">
+                                <label class="postheading" for ="postTitle"> Title </label>
+                                <input type="text" class="postTitle" id="postTitle" name ="postTitle" autocomplete="off" required>
+                            </div>
 
-    <div class ="paragraphs">
-        <p>This is currency strength meter for currency symbols</p>
-        <p>The best currency strength meter online</p>
-        <p>Refreshed every hour to give you current status of the currency strength</p>
-    </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </main>
 
-    <div class ="div">
-        <button class ="button-refresh">Refresh</button>
-    </div>
-
-<script src="\index.js" charset ="UTF-8"></script>
-</body>
-
+    </body>
 </html>
