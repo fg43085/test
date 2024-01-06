@@ -1,26 +1,15 @@
 document.addEventListener('DOMContentLoaded', function () { 
-	const createPostBtn = 
-		document.getElementById('createPostBtn'); 
-	const createPostModal = 
-		document.getElementById('createPostModal'); 
-	const closeModal = 
-		document.getElementById('closeModal'); 
-	const postForm = 
-		document.getElementById('postForm'); 
-	const postSubmitBtn = 
-		document.getElementById('postSubmitBtn'); 
-	const postContainer = 
-		document.querySelector('.post-container'); 
-	const postDetailModal = 
-		document.getElementById('postDetailModal'); 
-	const closeDetailModal = 
-		document.getElementById('closeDetailModal'); 
-	const detailTitle = 
-		document.getElementById('detailTitle'); 
-	const detailDate = 
-		document.getElementById('detailDate'); 
-	const detailDescription = 
-		document.getElementById('detailDescription'); 
+	const createPostBtn = document.getElementById('createPostBtn'); 
+	const createPostModal = document.getElementById('createPostModal'); 
+	const closeModal = document.getElementById('closeModal'); 
+	const postForm = document.getElementById('postForm'); 
+	const postSubmitBtn = document.getElementById('postSubmitBtn'); 
+	const postContainer = document.querySelector('.post-container'); 
+	const postDetailModal = document.getElementById('postDetailModal'); 
+	const closeDetailModal = document.getElementById('closeDetailModal'); 
+	const detailTitle = document.getElementById('detailTitle'); 
+	const detailDate = document.getElementById('detailDate'); 
+	const detailDescription = document.getElementById('detailDescription'); 
 
 	createPostBtn.addEventListener('click', function () { 
 		createPostModal.style.display = 'flex'; 
@@ -40,12 +29,9 @@ document.addEventListener('DOMContentLoaded', function () {
 		event.preventDefault(); 
 
 		// Validation 
-		const postCategory = 
-			document.getElementById('postCategory').value; 
-		const postTitle = 
-			document.getElementById('postTitle').value; 
-		const postDescription = 
-			document.getElementById('postDescription').value; 
+		const postCategory = document.getElementById('postCategory').value; 
+		const postTitle = document.getElementById('postTitle').value; 
+		const postDescription = document.getElementById('postDescription').value; 
 
 		if (postCategory.trim() === '' || 
 		postTitle.trim() === '' || 
@@ -140,14 +126,13 @@ document.addEventListener('DOMContentLoaded', function () {
 	}); 
 
 	closeDetailModal.addEventListener('click', function () { 
-	
 		// Add fadeOut class 
 		postDetailModal.classList.add('fadeOut'); 
 		setTimeout(() => { 
-		postDetailModal.style.display = 'none'; 
+		    postDetailModal.style.display = 'none'; 
 			
-		// Remove fadeOut class 
-		postDetailModal.classList.remove('fadeOut'); 
+		    // Remove fadeOut class 
+		    postDetailModal.classList.remove('fadeOut'); 
 		}, 500); 
 	}); 
 }); 
